@@ -14,8 +14,15 @@ document.getElementById("yourname").textContent = name;
 countbtn.addEventListener("click", function() {
   result1.value = "#";
   result2.value = "#";
+  if(no1>=100||no2>=100)
+  {
+    alert("refresh the page to play again..");
+  }
+   else
+  {
   setTimeout(resultshow2, 2000);
   setTimeout(resultshow1, 1000);
+  }
 });
 function resultshow2() {
   var countNO2 = parseInt(Math.random() * 6);
